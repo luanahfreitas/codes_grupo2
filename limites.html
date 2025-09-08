@@ -8,31 +8,34 @@
         <header>
             <img src="img/icone.png">
             <h1>
-                Estatísticas Casa
+                Limites
             </h1>
         </header>
         <main>
+            
+            <label for="tipo-categoria">Escolha a categoria:</label>
+            <select id="tipo-categoria" name="tipo-cataegoria">
+                <option value="alimentacao">Alimentação</option>
+                <option value="casa">Casa</option>
+                <option value="compras">Compras</option>
+                <option value="lazer">Lazer</option>
+                <option value="saude">Saúde</option>
+                <option value="transporte">Transporte</option>
+            </select>
+
             <ul>
                 <li>
-                    <p>Mes Atual</p>
+                    <p>Registre o valor do limite:</p>
                 </li>
                 <li>
-                    <p>R$ 2865,19</p>
+                    <input type="number" placeholder="Digite o valor do limite">
                 </li>
             </ul>
             
-            <ul>
-                <li>
-                    <p>Limite</p>
-                </li>
-                <li>
-                    <p>R$ 2600,00</p>
-                </li>
-            </ul>
+            <a href="index.html">
+                <p>Salvar</p>
+            </a>
 
-            <p>
-                ATENÇÃO: Você gatou R$ 265,19 acima do seu limite mensal para a categoria Casa.
-            </p>
             <hr>
             <ul>
                 <li>

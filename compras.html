@@ -8,31 +8,50 @@
         <header>
             <img src="img/icone.png">
             <h1>
-                Estatísticas Casa
+                Compras
             </h1>
         </header>
         <main>
+
+            <label for="tipo">Escolha o tipo:</label>
+            <select id="tipo" name="tipo">
+                <option value="gasto regular">Gasto Regular</option>
+                <option value="conta fixa">Conta Fixa</option>
+            </select>
+
+
+            <h2>Gasto Regular</h2>
             <ul>
                 <li>
-                    <p>Mes Atual</p>
+                    <p>Registre o valor do gasto regular:</p>
                 </li>
                 <li>
-                    <p>R$ 2865,19</p>
-                </li>
-            </ul>
-            
-            <ul>
-                <li>
-                    <p>Limite</p>
-                </li>
-                <li>
-                    <p>R$ 2600,00</p>
+                    <input type="number" placeholder="Digite o valor do gasto regular">
                 </li>
             </ul>
 
-            <p>
-                ATENÇÃO: Você gatou R$ 265,19 acima do seu limite mensal para a categoria Casa.
-            </p>
+            <h2>Conta Fixa</h2>
+            <ul>
+                <li>
+                    <p>Registre o valor da conta fixa:</p>
+                </li>
+                <li>
+                    <input type="number" placeholder="Digite o valor da conta fixa">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Data fixa da cobrança:</p>
+                </li>
+                <li>
+                     <input type="date" placeholder="Selecione a data">
+                </li>
+            </ul>
+
+            <a href="index.html">
+                <p>Salvar</p>
+            </a>
+
             <hr>
             <ul>
                 <li>
