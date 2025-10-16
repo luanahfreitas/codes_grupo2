@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -15,41 +16,33 @@
             </h1>
         </header>
         <main>
-            <label for="tipo-estatistica">Escolha o tipo:</label>
-            <select id="tipo-estatistica" name="tipo-estatistica">
-                <option value="anual">Estatísticas Anual</option>
-                <option value="categorias">Estatísticas por Categorias</option>
-            </select>
+            <ul class="inputs-lado-a-lado">
+                <li><p>Escolha o tipo de estatística</p></li>
+                <li><select id="tipo-estatistica" name="tipo-estatistica">
+                    <option value="anual">Estatística Anual</option>
+                    <option value="categorias">Estatísticas por Categorias</option>
+                </select></li>
+            </ul>
             
-            <h2>Estatísticas Anual</h2>
+            <h2 class="estatisticas">Estatística Anual</h2>
             <img src="img/graficoanual.png" alt="Gráfico anual de despesas e receitas">
 
-            <h2>Estatísticas por Catergoria</h2>
-            <!-- voltar para a página de estatisticas por categoria -->
-
-            <a href="estatisticasporcategorias.html">
-                <p>página de estatisticas por categorias</p>
+            <a href="estatisticasporcategorias.html" class="botao">
+                <h2 class="estatisticas">Estatísticas por Catergoria</h2>
             </a>
-
-
-            <hr>
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <img src="img/home.png" alt="icone de home">
-                    </a>
-                </li>
-                <li>
-                    <a href="adicionar.html">
-                        <img src="img/adicionar.png" alt="icone de adicionar">
-                    </a>
-                </li>
-                <li>
-                    <a href="estatisticas.html">
-                        <img src="img/estatisticas.png" alt="icone de estatísticas">
-                    </a>
-                </li>
-            </ul>
+                
+            <!-- voltar para a página de estatisticas por categoria -->
         </main>
+        <footer>
+            <a href="index.html" class="botao">
+                    <img src="img/home.png" alt="icone de home">
+            </a>
+            <a href="adicionar.html" class="botao">
+                <img src="img/adicionar.png" alt="icone de adicionar">
+            </a>
+            <a href="estatisticas.html" class="botao">
+                <img src="img/estatisticas.png" alt="icone de estatísticas">
+            </a>
+        </footer>
     </body>
 </html>
